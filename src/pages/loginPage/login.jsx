@@ -1,13 +1,15 @@
 import { Link, Outlet } from "react-router-dom"
+import Perfil from '../../img/tartaruga.svg'
 
 export default function LoginPage(){
     return(
         <div>
             <form className="formulario">
                 <div className="text">
-                    <h2 className="title">
-                            Acesse sua conta <span className="logo">lapso<span>o</span></span> 
-                    </h2>
+                    <h1 className="title-logo "><span className="logo">lapso<span>o</span></span> </h1>
+                    <span className="title-login">
+                            Acesse sua conta
+                    </span>
                 </div>
                 <div className="formulario mrgn">
                     <label> 

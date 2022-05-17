@@ -12,11 +12,8 @@ const WelcomePage = () =>{
             <div className="login-body alcen">
                 
                 <div className="welcome-logo">
-
                     <img className="perfil" src={Perfil} />
                     <h1 className="title-logo "><span className="logo">lapso<span>o</span></span> </h1>
-                
-
                 </div>
                 
                 <div className="text">

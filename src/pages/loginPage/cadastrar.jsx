@@ -6,10 +6,11 @@ export default function CadastrarPage(){
 
             <form className="formulario">
             <div className="text">
-                <h2 className="title">
-                        Crie sua nova conta <span className="logo">lapso<span>o</span></span>  
-                </h2>
-            </div>
+                    <h1 className="title-logo "><span className="logo">lapso<span>o</span></span> </h1>
+                    <span className="title-login">
+                            Crie sua nova conta
+                    </span>
+                </div>
 
                 <div className="formulario mrgn">
 

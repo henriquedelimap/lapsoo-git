@@ -3,11 +3,12 @@ export default function RecuperarSenhaPage(){
         <div>
             <form className="formulario">
 
-                <div className="text">
-                    <h2 className="title">
-                            Recupere sua conta <span className="logo">lapso<span>o</span></span> 
-                    </h2>
-                    <h3 className="subtitle">
+            <div className="text">
+                    <h1 className="title-logo "><span className="logo">lapso<span>o</span></span> </h1>
+                    <span className="title-login">
+                        Recupere sua conta
+                    </span>
+                    <h3 className="subtitle-login">
                             Informe o email vinculado a sua conta para recuperar a senha
                     </h3>
                 </div>
