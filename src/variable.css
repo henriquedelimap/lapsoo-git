@@ -1,0 +1,37 @@
+
+:root{
+
+
+    --color1: #4180ab;
+    --color2: #ffffff ;
+    --color3:  #8ab3cf ;
+    --color4:  #bdd1de ;
+    --color5:  #e4ebf0 ;
+    --color6:  linear-gradient(#f2f6f9, #ffffff00);
+    --fonte: 'Nunito Sans', sans-serif;
+    --cinza: #8e8e8e;
+    --cinza-shadow: #8e8e8e3f;
+    --shadow: #33333324;
+
+    --preto: #333333;
+    --preto2: #464c51;
+
+    --0: #FFFFFF;
+    --1: #0476D9;
+    --2: #308AD9;
+    --3: #F25C05;
+    --4: #262626;
+    --5: #D6D6D6;
+    --6: #F2F2F2;
+    --7: #c4e3ff4b;
+    --8: #69696914;
+
+    
+
+    /* PALETA 01 */
+    /* --color1: #1c0b2b;
+    --color2: #301c41 ;
+    --color3:  #413b6b ;
+    --color4:  #5c65c0 ;
+    --color5:  #6f95ff ; */
+}
