@@ -12,17 +12,19 @@ const WelcomePage = () =>{
                 </span>
             </div>
             <div className="login-body">
-                <div className="text">
-                    <h1 className="title">
-                    <span className="logo">lapso<span>o</span></span> 
 
-                    </h1>
+                <div className="text">
+            <h1 className="title-logo "><span className="logo">lapso<span>o</span></span> </h1>
+
+
+
+                    
                     
                     <h2 className="title">
                         Crie uma conta para gerenciar seu sistema <span className="logo">lapso<span>o</span></span> 
                     </h2>
                     <h3 className="subtitle">
-                        para monitorar a atividade do seu site e automatizar o seu atendimento
+                        monitore a atividade do seu site, automatize o seu atendimento e gerencie suas leads
                          
                     </h3>
                 </div>
