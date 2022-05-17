@@ -18,6 +18,7 @@ class  HomePage extends React.Component{
             <section className="menu">
 
                 <h1 className="title "><span className="logo">lapso<span>o</span></span> </h1>
+                
             </section>
             <section className="menu-lateral dfc" >  
                 <div className="dfc menuL-list">

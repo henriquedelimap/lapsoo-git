@@ -36,7 +36,7 @@
 }
 
 .imagem{
-  background-image: url(./img/fundo.svg);
+  /* background-image: url(./img/fundo.svg); */
   background-position-y: -5rem;
   background-repeat: no-repeat;
   background-size: cover;

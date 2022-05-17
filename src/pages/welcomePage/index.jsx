@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom"
-import Perfil from '../../img/perfil1.svg'
+import Perfil from '../../img/tartaruga.svg'
 import {  BiCube } from 'react-icons/bi';
 
 const WelcomePage = () =>{
@@ -21,10 +21,10 @@ const WelcomePage = () =>{
                     
                     
                     <h2 className="title">
-                        Crie uma conta para gerenciar seu sistema <span className="logo">lapso<span>o</span></span> 
+                        O sistema de gerenciamento de leads
                     </h2>
                     <h3 className="subtitle">
-                        monitore a atividade do seu site, automatize o seu atendimento e gerencie suas leads
+                        que monitora a atividade do seu site e automatiza o seu atendimento
                          
                     </h3>
                 </div>
