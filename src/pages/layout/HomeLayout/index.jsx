@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import './style.css'
 import { MdSettings, MdAccountCircle, MdDashboard } from 'react-icons/md'
 
@@ -15,34 +15,32 @@ class  HomePage extends React.Component{
 
         return(
             <div className="container">
-            <section className="menu">
+                <section className="menu">
+                    <h1 className="title "><span className="logo">lapso<span>o</span></span> </h1>
+                </section>
 
-                <h1 className="title "><span className="logo">lapso<span>o</span></span> </h1>
+                <section className="menu-lateral dfc" >  
+                    <div className="dfc menuL-list">
+                        {
+                            ScriptMenuLateral.map(script=>{
+                                return(
+                                    
+                                    <Link className='Link  ' to={script.route}  >
+                                        <span className="MdIcon">{script.icon}</span> 
+                                        <span>{script.text}</span> 
+                                    </Link> 
+                                )
+                            })
+                        }
+                    </div>
+
+                </section>
                 
-            </section>
-            <section className="menu-lateral dfc" >  
-                <div className="dfc menuL-list">
-                    {
-                        ScriptMenuLateral.map(script=>{
-                            
-                          
-                            return(
-                                
-                                <Link className='Link  ' to={script.route}  >
-                                    <span className="MdIcon">{script.icon}</span> 
-                                    <span>{script.text}</span> 
-                                </Link> 
-                            )
-                        })
-                    }
-                </div>
+                <section className="body">
+                    <Outlet />
+                </section>
 
-            </section>
-            <section className="body">
-
-            </section>
-        </div>
-
+            </div>
 )
 }
 }

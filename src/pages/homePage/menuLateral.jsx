@@ -1,33 +1,34 @@
 import { MdSettings, MdAccountCircle, MdDashboard } from 'react-icons/md'
+import { BsChatRight } from 'react-icons/bs'
 
 export const ScriptMenuLateral = [
     {
         status: 1,
         key: 1,
-        route: '/',
+        route: 'inicio',
         icon: <MdAccountCircle  />,
-        text: 'Início'
+        text: 'início'
     },
     {
         status: 0,
         key: 2,
-        route: '/',
+        route: 'dashboard',
         icon: <MdDashboard />,
-        text: 'Dashboard'
+        text: 'dashboard'
     },
     {
         status: 0,
         key: 3,
-        route: '/',
-        icon: <MdSettings />,
-        text: 'Configuração'
+        route: 'chatbot',
+        icon: <BsChatRight />,
+        text: 'chat Bot'
     },
     {
         status: 0,
         key: 3,
-        route: '/',
+        route: 'configuracao',
         icon: <MdSettings />,
-        text: 'Configuração'
+        text: 'configuração'
     },
     
 ] 

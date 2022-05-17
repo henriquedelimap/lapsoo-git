@@ -13,6 +13,10 @@ import LoginPage from './pages/loginPage/login'
 import CadastrarPage from './pages/loginPage/cadastrar'
 import RecuperarSenhaPage from './pages/loginPage/RecuperarSenha'
 import HomePage  from './pages/layout/HomeLayout'
+import {Dashboard} from './pages/layout/HomeLayout/DashboardLayout/index'
+import {Chatbot} from './pages/layout/HomeLayout/ChatBotLayout/index'
+import { Configuracao } from './pages/layout/HomeLayout/ConfiguracaoLayout'
+import { Inicio } from './pages/layout/HomeLayout/InicioLayout'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -26,7 +30,14 @@ root.render(
           <Route path='cadastrar' element={ <CadastrarPage /> } />
           <Route path='recuperar-senha' element={ <RecuperarSenhaPage /> } />
         </Route>
-        <Route path='home' element={ <HomePage /> } />
+        <Route path='home' element={ <HomePage /> } >
+          <Route path='inicio' element= { <Inicio /> } />
+          <Route path='dashboard' element= { <Dashboard /> } />
+          <Route path='chatbot' element= { <Chatbot /> } />
+          <Route path='configuracao' element= { <Configuracao /> } />
+
+          
+        </Route>
     </Routes>
   </BrowserRouter>
 )
