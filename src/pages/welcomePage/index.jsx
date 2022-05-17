@@ -4,22 +4,22 @@ import {  BiCube } from 'react-icons/bi';
 
 const WelcomePage = () =>{
     return(
-        <div className="div">
-            <div className="alcen dfc">
-                <span className="imagem" />
-                <span className="perfil">
-                    <img src={Perfil} />
-                </span>
+        <div className="">
+            <div className="">
+                {/* <span className="imagem" /> */}
+                
             </div>
-            <div className="login-body">
+            <div className="login-body alcen">
+                
+                <div className="welcome-logo">
 
+                    <img className="perfil" src={Perfil} />
+                    <h1 className="title-logo "><span className="logo">lapso<span>o</span></span> </h1>
+                
+
+                </div>
+                
                 <div className="text">
-            <h1 className="title-logo "><span className="logo">lapso<span>o</span></span> </h1>
-
-
-
-                    
-                    
                     <h2 className="title">
                         O sistema de gerenciamento de leads
                     </h2>
