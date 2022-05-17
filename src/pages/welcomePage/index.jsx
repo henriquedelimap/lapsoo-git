@@ -13,7 +13,10 @@ const WelcomePage = () =>{
             </div>
             <div className="login-body">
                 <div className="text">
+                    <h1 className="title">
                     <span className="logo">lapso<span>o</span></span> 
+
+                    </h1>
                     
                     <h2 className="title">
                         Crie uma conta para gerenciar seu sistema <span className="logo">lapso<span>o</span></span> 
