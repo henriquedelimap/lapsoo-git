@@ -2,7 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 import './style.css'
 import { MdSettings, MdAccountCircle, MdDashboard } from 'react-icons/md'
 
-import { ScriptMenuLateral } from "../../homePage/menuLateral";
+import { ScriptMenuLateral } from "../../scripts/menuLateral";
 import React from "react";
 
 class  HomePage extends React.Component{

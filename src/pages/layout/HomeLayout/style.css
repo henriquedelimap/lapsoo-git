@@ -26,14 +26,13 @@
     position: sticky;
     top: 3.2rem;
     box-sizing: border-box;
-    background-color: var(--0);
+    background-color: transparent;
 }
 .body{
     grid-area: 2 / 2 / 3 / 3;
     height: 100vh - 3.2rem;
     scroll-behavior: smooth;
     overflow: hidden;
-
 }
 
 .menuL-list{
@@ -67,6 +66,9 @@
     margin-top: .32rem;
     color: var(--cinza);
 }
+.MdIconColor{
+    color: var(--cinza);
+}
 .configPerfil{
     margin-top: -1.6rem;
     background-color: var(--0);
@@ -83,39 +85,42 @@
 
 /*Dashboard*/
 .con-card{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12.1rem, 1fr));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(11.9rem, 1fr));
+    margin: 1.6rem;
 }
 .card-box{
-    width: 10.5rem;
-    height: 17rem;
-    margin: 1.6rem;
+    width: 11.1rem;
+    height: 17.9rem;
+    margin-bottom: .8rem;
+    margin-right: .8rem;
     border-radius: .64rem;
     padding: 0.2rem .8rem;
     box-sizing: border-box;
     justify-self: start;
-
 }
 .con-card-dash{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30.6rem, 1fr)); 
-    
+    grid-template-columns: repeat(auto-fit, 1fr); 
+    margin: 1.6rem;
 }
 .card-box-dash{
-    max-width: 29rem;
-    min-width: 92%;
-    height:  17.9rem; 
-    margin: 1.6rem;
+    min-width: 100%;
+    height:  17.9rem;
+    margin-bottom: .8rem;
     border-radius: .64rem;
-    padding: 0.2rem .8rem;
+    padding: .2rem .8rem;
     box-sizing: border-box;
     justify-self: center;
 }
 .con-card-config{
-    margin: 1.6rem ;
+    margin: 1.6rem;
 }
 .card-box-config{
-    height: 6.4rem;
+    height: 5.44rem;
     margin-bottom: .8rem;
     border-radius: .64rem;
     padding: 1rem 1.2rem;
@@ -141,26 +146,54 @@
     width: 100%;
 }
 
+/*LEADS*/
+.leads-info{
+    margin: .4rem;
+    width: 100%;
+    color: var(--cinza);
+    font-size: .8rem;
+    font-weight: 200;
+}
+.leads-info div{
+    padding-bottom: .4rem;
+    border-bottom: 1px solid var(--cinza-shadow);
+}
+.leads-info-output{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1rem;
+}
+.leads-name{
+    font-style: italic;
+    font-size: .9rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 .4rem;
+}
+
+
 @media screen and (max-width: 1040px){
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 8vh 8vh 12fr;
+        grid-template-rows: 2.4rem 2.4rem 1fr;
         
     }
     .menu{
         grid-area: 1 / span 2;
-        height: 3.2rem;
+        height: 2.4rem;
         box-shadow: none;
- 
+        justify-content: center;
+        
     }
     .menu-lateral{
         grid-area: 2 / span 3;
-        height: 4.2rem;
-        box-shadow: 0px 2px 1px 0px var(--cinza-shadow);
+        height: 2.4rem;
+        box-shadow: 0px 1px 0px 0px var(--cinza-shadow);
     }
     .menuL-list{
         flex-direction: row;
-        margin-top: 0rem;
+        margin-top: -1.6rem;
 
     }
     .Link{
@@ -191,12 +224,28 @@
         display: none;
     }
     .Link:hover{
-        background-color: var(--0);
+        background-color: transparent;
 
     }
 
     .body{
         grid-area: 3 / span 4;
         /* height: 1000rem; */
+    }
+
+
+    .con-card{
+        margin: 2.4rem 1.6rem;
+        justify-content: space-evenly;
+
+    }
+    .card-box{
+        justify-self: center;
+    }
+    .con-card-dash{
+        margin: 2.4rem 1.6rem;    
+    }
+    .con-card-config{
+        margin: 2.4rem 1.6rem;
     }
 }
