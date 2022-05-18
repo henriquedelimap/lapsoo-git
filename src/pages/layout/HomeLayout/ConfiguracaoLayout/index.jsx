@@ -1,7 +1,16 @@
 export function Configuracao(){
     return(
-        <div style={{backgroundColor: 'var(--3)', height: '100%'}}>
-            <h2>Configuracao</h2>
+        <div >
+            <div className="dfc con-card-config">
+                <p className="card-box-config b1">ahhahahahahaha</p>
+                <p className="card-box-config b1" >ahhahahahahaha</p >
+                <p className="card-box-config b1" >ahhahahahahaha</p >
+                <p className="card-box-config b1" >ahhahahahahaha</p >
+                <p className="card-box-config b1" >ahhahahahahaha</p >
+                <p className="card-box-config b1" >ahhahahahahaha</p >
+                <p className="card-box-config b1" >ahhahahahahaha</p >
+                <p className="card-box-config b1" >ahhahahahahaha</p>
+            </div>
         </div>
     )
 }

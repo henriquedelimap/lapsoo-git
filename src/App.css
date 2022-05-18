@@ -224,12 +224,18 @@
   display: flex;
   flex-direction: row;
 }
-.dfrc{
+.dfrc-between{
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+.dfrc{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .margin08rem{
   margin: .8rem;

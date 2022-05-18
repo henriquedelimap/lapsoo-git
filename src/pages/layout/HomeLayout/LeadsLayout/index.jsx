@@ -7,7 +7,7 @@ export function Leads(){
         <div>
             <div className="con-card">
                 <div className="card-box b1 dfc alcen">
-                    <div className='dfrc '>
+                    <div className='dfrc-between '>
                         <span className='status c3' />
                         <span className='title'>henrique</span>
                         <span className="MdIcon cpointer">
