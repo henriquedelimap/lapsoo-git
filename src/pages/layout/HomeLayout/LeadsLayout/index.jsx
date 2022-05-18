@@ -1,7 +1,8 @@
 import Image from '../../../../img/perfil1.svg'
 import {MdManageAccounts, MdSend, MdScheduleSend} from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
-export function Chat(){
+export function Leads(){
     return(
         <div>
             <div className="con-card">
@@ -9,7 +10,11 @@ export function Chat(){
                     <div className='dfrc '>
                         <span className='status c3' />
                         <span className='title'>henrique</span>
-                        <span className="MdIcon cpointer"><MdSend /></span> 
+                        <span className="MdIcon cpointer">
+                            <Link to='../chat' >
+                                <MdSend />
+                            </Link>
+                        </span> 
                     </div>
                     <span className='perfil-circle'>
                         <img  src={Image}></img>

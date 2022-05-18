@@ -14,9 +14,10 @@ import CadastrarPage from './pages/loginPage/cadastrar'
 import RecuperarSenhaPage from './pages/loginPage/RecuperarSenha'
 import HomePage  from './pages/layout/HomeLayout'
 import {Dashboard} from './pages/layout/HomeLayout/DashboardLayout/index'
-import {Chat} from './pages/layout/HomeLayout/ChatLayout/index'
+import {Leads} from './pages/layout/HomeLayout/LeadsLayout/index'
 import { Configuracao } from './pages/layout/HomeLayout/ConfiguracaoLayout'
 import { Inicio } from './pages/layout/HomeLayout/InicioLayout'
+import { Chat } from './pages/layout/HomeLayout/LeadsLayout/chat'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -33,11 +34,13 @@ root.render(
         <Route path='home' element={ <HomePage /> } >
           <Route path='inicio' element= { <Inicio /> } />
           <Route path='dashboard' element= { <Dashboard /> } />
-          <Route path='chat' element= { <Chat /> } />
+          <Route path='leads' element= { <Leads /> } />
+          <Route path='chat' element={ <Chat /> } />
           <Route path='configuracao' element= { <Configuracao /> } />
 
-          
         </Route>
+        <Route path='*' element={ <WelcomePage /> } />
+
     </Routes>
   </BrowserRouter>
 )

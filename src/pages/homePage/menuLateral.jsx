@@ -1,5 +1,4 @@
-import { MdSettings, MdAccountCircle, MdDashboard } from 'react-icons/md'
-import { BsChatRight } from 'react-icons/bs'
+import { MdSettings, MdAccountCircle, MdDashboard, MdContacts } from 'react-icons/md'
 
 export const ScriptMenuLateral = [
     {
@@ -19,9 +18,9 @@ export const ScriptMenuLateral = [
     {
         status: 0,
         key: 3,
-        route: 'chat',
-        icon: <BsChatRight />,
-        text: 'chat'
+        route: 'leads',
+        icon: <MdContacts />,
+        text: 'leads'
     },
     {
         status: 0,
