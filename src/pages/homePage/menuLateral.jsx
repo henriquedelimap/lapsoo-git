@@ -19,9 +19,9 @@ export const ScriptMenuLateral = [
     {
         status: 0,
         key: 3,
-        route: 'chatbot',
+        route: 'chat',
         icon: <BsChatRight />,
-        text: 'chat Bot'
+        text: 'chat'
     },
     {
         status: 0,
@@ -30,5 +30,6 @@ export const ScriptMenuLateral = [
         icon: <MdSettings />,
         text: 'configuração'
     },
+    
     
 ] 

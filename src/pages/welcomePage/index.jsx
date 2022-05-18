@@ -28,7 +28,7 @@ const WelcomePage = () =>{
                 <nav className="btns">
                     {/* <img className="imagem" src={Fundo} /> */}
                     <Link to='/login' className="btn" > <span >Fazer login</span> </Link>
-                    <Link to='/login/cadastrar' className="btn inverte">Criar conta opsus</Link>
+                    <Link to='/login/cadastrar' className="btn inverte">Criar conta lapsoo</Link>
                 </nav>
             </div>
 

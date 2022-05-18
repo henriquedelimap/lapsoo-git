@@ -13,7 +13,7 @@
     position: sticky;
     top: 0;
     box-sizing: border-box;
-    box-shadow: 0px 2px 1px 0px var(--cinza-shadow);
+    box-shadow: 0px 1px 1px 0px var(--cinza-shadow);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -25,6 +25,7 @@
     position: sticky;
     top: 8vh;
     box-sizing: border-box;
+    background-color: var(--0);
 }
 .body{
     grid-area: 2 / 2 / 3 / 3;
@@ -43,7 +44,7 @@
     flex-direction: row;
     font-weight: 500;
     align-items: center;
-    height: 6vh;
+    height: 3.2rem;
     width: 100%;
     padding: 0 1.6rem;
     border-radius: 0 1.6rem 1.6rem 0;
@@ -60,10 +61,45 @@
 }
 
 .MdIcon{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: .32rem;
+    color: var(--cinza);
+}
+.configPerfil{
+    margin-top: -1.6rem;
+    background-color: var(--0);
+    color: var(--cinza);
+    border: 1px solid var(--0);
+    box-shadow: 0px -.12rem 1px 1px  var(--cinza-shadow);
+    border-radius: 50rem;
 }
 
+.cpointer{
+    cursor: pointer;
+}
+
+
+/*Dashboard*/
+.con-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.1rem, 1fr));
+
+}
+.card-box{
+    width: 10.5rem;
+    height: 17rem;
+    margin: 1.6rem;
+    border-radius: .64rem;
+    padding: 0.2rem .8rem;
+    box-sizing: border-box;
+
+}
+
+.status{
+    width: .64rem;
+    height: .64rem;
+    border-radius: 50rem;
+}
 
 
 @media screen and (max-width: 1040px){
@@ -82,6 +118,7 @@
         grid-area: 2 / span 3;
         height: 8vh;
         box-shadow: 0px 2px 1px 0px var(--cinza-shadow);
+        overflow: scroll;
     }
     .menuL-list{
         flex-direction: row;
@@ -112,7 +149,7 @@
         left: 50%;
         transform: translateX(-50%);
     }
-    .MdIcon{
+    .res-none{
         display: none;
     }
     .Link:hover{

@@ -26,7 +26,7 @@ class  HomePage extends React.Component{
                                 return(
                                     
                                     <Link className='Link  ' to={script.route}  >
-                                        <span className="MdIcon">{script.icon}</span> 
+                                        <span className="MdIcon res-none">{script.icon}</span> 
                                         <span>{script.text}</span> 
                                     </Link> 
                                 )

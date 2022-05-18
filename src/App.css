@@ -1,3 +1,35 @@
+.c0{
+  background-color: var(--0);
+}
+.c1{
+  background-color: var(--1);
+}
+.c2{
+  background-color: var(--2);
+}
+.c3{
+  background-color: var(--3);
+}
+.c4{
+  background-color: var(--4);
+}
+.c5{
+  background-color: var(--5);
+}
+.c6{
+  background-color: var(--6);
+}
+.c7{
+  background-color: var(--7);
+}
+.b1{
+  border: 1px solid var(--cinza-shadow);
+
+}
+
+
+
+
 .btn{
   background-color: var(--1);
   border-radius: .2rem;
@@ -20,7 +52,6 @@
   font-weight: 700;
 
   margin: .8rem 0;
-
 }
 .btns{
   display: flex;
@@ -44,17 +75,26 @@
   /* width: 100rem; */
   /* height: 16rem; */
 }
-.perfil{
+.perfil,
+.perfil-circle{
   height: 6rem;
-  border: 2px solid rgb(255, 255, 255);
+  border: .64rem solid transparent;
   width: 6rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.perfil img{
-  height: 6.4rem;
+.perfil-circle{
+  overflow: hidden;
+}
+.perfil-circle,
+.perfil-circle img {
+  border-radius: 150rem;
+}
+.perfil img,
+.perfil-circle img{
+  height: 6.5rem;
 }
 .div{
 
@@ -135,7 +175,7 @@
   align-items: center;
 }
 .card{
-  width: 28rem;
+  width: 21rem;
   height: 34rem;
   border-radius: .64rem;
   border: 1px solid var(--cinza-shadow);
@@ -159,7 +199,7 @@
   color: (--cinza);
 }
 .formulario label input{
-  width: 22rem;
+  width: 16rem;
   border: 1px solid var(--cinza-shadow);
   padding: .6rem 1rem;
 
@@ -184,6 +224,17 @@
   display: flex;
   flex-direction: row;
 }
+.dfrc{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.margin08rem{
+  margin: .8rem;
+}
+
 .logo{
   z-index: 100;
   position: relative;

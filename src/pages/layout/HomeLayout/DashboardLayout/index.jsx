@@ -1,7 +1,13 @@
+
+
 export function Dashboard(){
     return(
-        <div style={{backgroundColor: 'var(--6)', height: '100%'}}>
-            <h2>Dashboard</h2>
+        <div className="con-card">
+            <div className="card-box c4"></div>
+            <div className="card-box c4"></div>
+            <div className="card-box c4"></div>
+            <div className="card-box c4"></div>
+            <div className="card-box c4"></div>
         </div>
     )
 }
