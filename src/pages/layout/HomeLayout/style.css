@@ -97,10 +97,10 @@
     margin: 1.6rem 0;
 }
 .card-box{
-    width: auto;
+    width: 6.4rem;
     height: auto;
-    margin-bottom: .8rem;
-    margin-right: 1.2rem;
+    margin-bottom: .64rem;
+    margin-right: .32rem;
     border-radius: .64rem;
     box-sizing: border-box;
     display: flex;
@@ -156,17 +156,14 @@
 
 /*LEADS*/
 .leads-info{
-    margin: .4rem;
-    width: 100%;
-    color: var(--cinza);
-    font-size: .8rem;
-    font-weight: 200;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .leads-info div{
     padding-bottom: .4rem;
     border-bottom: 1px solid var(--cinza-shadow);
-    
+
     
 }
 .leads-info-output{
@@ -177,12 +174,15 @@
 }
 .leads-name{
     font-style: italic;
-    font-size: .9rem;
-    font-weight: 300;
+    font-size: .8rem;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: center;
     padding: 0 .4rem;
     color: var(--cinza);
+    overflow: hidden;
+    max-width: 5rem;    
+    display: flex;
 }
 
 

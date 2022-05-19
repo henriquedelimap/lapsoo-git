@@ -26,7 +26,7 @@ export function Leads(){
                                             <span className='status-perfil'></span>
                                         </div>
 
-                                        <div className='dfrc'>
+                                        <div className='leads-info'>
                                             <span className='status c3' />
                                             <span className='leads-name'>                        
                                                 {lead.name}

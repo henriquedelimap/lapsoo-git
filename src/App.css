@@ -139,6 +139,7 @@
 } */
 .title{
   color: var(--preto2);
+  font-weight: 500;
   padding: .4rem .6rem;  
 }
 .title-login{
@@ -168,6 +169,7 @@
   color: var(--cinza);
   text-align: center;
   padding: 0rem 1.6rem;
+  font-weight: 400;
 }
 .link{
   color: var(--cinza);

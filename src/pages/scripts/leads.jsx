@@ -10,7 +10,7 @@ export const leads = [
     },
     {
         id: 2,
-        name: 'felipe',
+        name: 'felipeddddddddddd',
         img: Imagem1,
     },
     
