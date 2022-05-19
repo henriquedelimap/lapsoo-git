@@ -36,7 +36,7 @@ root.render(
           <Route path='inicio' element= { <Inicio /> } />
           <Route path='dashboard' element= { <Dashboard /> } />
           <Route path='leads' element= { <Leads /> }>
-            <Route path='chat/:username' element={ <Chat /> } />
+            <Route path='chat/:id' element={ <Chat /> } />
           </Route>
           <Route path='configuracao' element= { <Configuracao /> } />
 

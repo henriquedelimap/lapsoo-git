@@ -248,13 +248,11 @@
 
 
     .con-card{
-        margin: 2.4rem 1.6rem;
+        margin: 1.6rem .4rem;
         justify-content: space-evenly;
 
     }
-    .card-box{
-        justify-self: center;
-    }
+
     .con-card-dash{
         margin: 2.4rem 1.6rem;    
     }

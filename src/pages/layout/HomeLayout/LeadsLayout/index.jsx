@@ -1,4 +1,4 @@
-import {MdManageAccounts, MdSend, MdScheduleSend} from 'react-icons/md'
+import {MdManageAccounts, MdSend, MdScheduleSend, MdVisibility} from 'react-icons/md'
 import { Link, Outlet, useParams } from 'react-router-dom'
 import { leads } from '../../../scripts/leads'
 import {HorizontalScrollContainer, HorizontalScrollItem } from 'react-simple-horizontal-scroller'
@@ -7,13 +7,16 @@ export function Leads(){
     return(
         <div>
             <div className="con-card">
-                <HorizontalScrollContainer >
+                <HorizontalScrollContainer 
+                    controlsConfig={{
+                        position: 'AFTER_CHILD',
+                    }} >
                 {leads.map(lead=>{
                     return(         
                         <div >
                                 <HorizontalScrollItem id={lead.id} >
 
-                                    <Link to={'chat/'+lead.name} className='tdn' >
+                                    <Link to={'chat/'+lead.id} className='tdn' >
                                         <div className="card-box">
 
                                         <div className='perfil-container'>
