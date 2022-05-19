@@ -34,7 +34,6 @@
   /* width: 2.4rem;
   box-shadow: -.10rem 0px .20rem .01rem var(--cinza-shadow);
   overflow: hidden; */
-  display: none;
   width: 0;
 }
 .HorizontalScrollContainer_defaultArrowContainer .HorizontalScrollContainer_defaultRightArrow{
