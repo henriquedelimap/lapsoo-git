@@ -76,6 +76,7 @@
 .perfil-container{
   position: relative;
   margin-bottom: .4rem;
+  margin-top: .2rem;
 }
 .status-perfil{
   position: absolute;
