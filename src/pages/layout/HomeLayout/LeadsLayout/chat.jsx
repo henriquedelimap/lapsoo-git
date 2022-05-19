@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Image from '../../../../img/perfil1.svg'
-import {MdArrowBack} from 'react-icons/md'
+import {MdArrowUpward} from 'react-icons/md'
 import { useParams } from 'react-router-dom'
 import { leads } from '../../../scripts/leads'
 
@@ -13,15 +13,15 @@ export function Chat(){
             if(id == leadId){
                 return (
                     <div className="body-chat c0">
-                        <div className='dfrc'>
+                        <div className='dfc alcen chat-header'>
                             {/* <span className='perfil-circle'>
                                 <img src={Image} />
                             </span> */}
                             <Link to='../'>
-                                <MdArrowBack className='MdIconColor' />
+                                <MdArrowUpward className='MdIconColor chat-arrow-upward' />
                             </Link>
 
-                            <span className='leads-name'>{lead.name}</span>
+                            <span className='leads-name-chat'>{lead.name}</span>
                         </div>
                     </div>
                 )
