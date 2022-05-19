@@ -16,6 +16,9 @@
     --preto: #333333;
     --preto2: #464c51;
 
+    --gradient: #e17753, #ddae8c, #dfb657, #fde6b1;
+    --gradient111: linear-gradient(#e17753, #ddae8c, #dfb657, #fde6b1);
+
     --0: #FFFFFF;
     --1: #0476D9;
     --2: #308AD9;
