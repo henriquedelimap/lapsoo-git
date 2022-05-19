@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import Image from '../../../../img/perfil1.svg'
 import {MdArrowBack} from 'react-icons/md'
-
+import { useParams } from 'react-router-dom'
 
 export function Chat(){
+    let {username} = useParams()
     return (
     <div className="body-chat c0">
         <div className='dfrc'>
@@ -11,9 +12,9 @@ export function Chat(){
                 <img src={Image} />
             </span> */}
             <Link to='../leads'>
-                <MdArrowBack />
+                <MdArrowBack className='MdIconColor' />
             </Link>
-            <span className='title'>henrique</span>
+            <span className='leads-name'>{username}</span>
         </div>
     </div>
     )

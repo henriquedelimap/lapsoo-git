@@ -1,4 +1,6 @@
-import Imagem from '../../img/perfil1.svg' 
+import  Imagem  from '../../img/perfil1.svg' 
+import Imagem1 from '../../img/fundo.svg' 
+import Imagem2 from '../../img/tartaruga.svg' 
 
 export const leads = [
     {
@@ -8,28 +10,28 @@ export const leads = [
     },
     {
         id: 2,
-        name: 'henrique',
-        img: Imagem,
+        name: 'felipe',
+        img: Imagem1,
     },
     
     {
         id: 3,
-        name: 'henrique',
-        img: Imagem,
+        name: 'luna',
+        img: Imagem2,
     },
     {
         id: 4,
-        name: 'henrique',
+        name: 'serena',
         img: Imagem,
     },    
     {
         id: 5,
-        name: 'henrique',
+        name: 'amora',
         img: Imagem,
     },
     {
         id: 6,
-        name: 'henrique',
+        name: 'lolly',
         img: Imagem,
     },
     {
