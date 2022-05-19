@@ -31,19 +31,21 @@
   
 }
 .HorizontalScrollContainer_buttonsContainer{
-  width: 2.4rem;
+  /* width: 2.4rem;
   box-shadow: -.10rem 0px .20rem .01rem var(--cinza-shadow);
-  overflow: hidden;
+  overflow: hidden; */
+  display: none;
+  width: 0;
 }
 .HorizontalScrollContainer_defaultArrowContainer .HorizontalScrollContainer_defaultRightArrow{
-  position: absolute;
+  /* position: absolute;
   width: .16rem;
   height: .16rem;
   left: -1.2rem;
   border: solid var(--cinza);
   border-width: 0 .24rem .24rem 0;
-  border-radius: .16rem;
-  
+  border-radius: .16rem; */
+  display: none;
 }
 
 .HorizontalScrollContainer_defaultArrowContainer .HorizontalScrollContainer_defaultLeftArrow{
