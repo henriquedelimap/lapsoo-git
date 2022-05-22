@@ -1,32 +1,33 @@
-import { MdSettings, MdAccountCircle, MdDashboard, MdContacts } from 'react-icons/md'
+import { MdOutlineSettings, MdAttachMoney, MdOutlineDashboardCustomize, MdOutlineContacts } from 'react-icons/md'
 
 export const ScriptMenuLateral = [
-    {
-        status: 1,
-        key: 1,
-        route: 'inicio',
-        icon: <MdAccountCircle  />,
-        text: 'início'
-    },
+
     {
         status: 0,
-        key: 2,
+        id: 1,
         route: 'dashboard',
-        icon: <MdDashboard />,
+        icon: <MdOutlineDashboardCustomize />,
         text: 'dashboard'
     },
     {
+        status: 2,
+        id: 1,
+        route: 'inicio',
+        icon: <MdAttachMoney  />,
+        text: 'cotação'
+    },
+    {
         status: 0,
-        key: 3,
+        id: 3,
         route: 'leads',
-        icon: <MdContacts />,
+        icon: <MdOutlineContacts />,
         text: 'leads'
     },
     {
         status: 0,
-        key: 3,
+        id: 4,
         route: 'configuracao',
-        icon: <MdSettings />,
+        icon: <MdOutlineSettings />,
         text: 'configuração'
     },
     

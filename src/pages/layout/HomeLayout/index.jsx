@@ -25,7 +25,7 @@ class  HomePage extends React.Component{
                             ScriptMenuLateral.map(script=>{
                                 return(
                                     
-                                    <Link className='Link  ' to={script.route}  >
+                                    <Link className='Link  ' to={script.route}  key={script.id}>
                                         <span className="MdIcon res-none">{script.icon}</span> 
                                         <span>{script.text}</span> 
                                     </Link> 

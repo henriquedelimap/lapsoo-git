@@ -13,10 +13,10 @@ export function Leads(){
                     }} >
                 {leads.map(lead=>{
                     return(         
-                        <div >
+                        <div key={lead.id}>
                                 <HorizontalScrollItem id={lead.id} >
 
-                                    <Link to={'chat/'+lead.id} className='tdn' >
+                                    <Link to={'chat/'+lead.id} className='tdn'  >
                                         <div className="card-box">
 
                                         <div className='perfil-container'>

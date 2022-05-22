@@ -151,6 +151,9 @@
 .body-chat{
     height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*LEADS*/
@@ -210,17 +213,21 @@
         height: 2.4rem;
         box-shadow: none;
         justify-content: center;
-        
+        background-color: var(--0);
+        z-index: 1000;
     }
     .menu-lateral{
         grid-area: 2 / span 3;
         height: 2.4rem;
         box-shadow: 0px 1px 0px 0px var(--cinza-shadow);
+        background-color: var(--0);
+        z-index: 100;
     }
     .menuL-list{
         flex-direction: row;
         margin-top: -1.6rem;
-
+        background-color: var(--0);
+        z-index: 100;
     }
     .Link{
         padding: 0;
