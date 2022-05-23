@@ -19,6 +19,7 @@ import { Configuracao } from './pages/layout/HomeLayout/ConfiguracaoLayout'
 import { Inicio } from './pages/layout/HomeLayout/InicioLayout'
 import { Chat } from './pages/layout/HomeLayout/LeadsLayout/chat'
 import { leads } from './pages/scripts/leads'
+import { InfoChat } from './pages/layout/HomeLayout/LeadsLayout/infoLeads'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -36,7 +37,9 @@ root.render(
           <Route path='inicio' element= { <Inicio /> } />
           <Route path='dashboard' element= { <Dashboard /> } />
           <Route path='leads' element= { <Leads /> }>
-            <Route path='chat/:id' element={ <Chat /> } />
+            <Route path='chat/:id' element={ <Chat /> }> 
+              <Route path=':info' element={<InfoChat />} />
+            </Route>
           </Route>
           <Route path='configuracao' element= { <Configuracao /> } />
 

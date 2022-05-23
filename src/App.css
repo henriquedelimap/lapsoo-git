@@ -1,3 +1,7 @@
+.fs12rem{
+  font-size: 1.2rem;
+}
+
 .c0{
   background-color: var(--0);
 }
@@ -112,7 +116,7 @@
   border-radius: 50rem;
   top: -.17rem;
   left: -.15rem;
-  z-index: -100;
+  
 }
 .div{
 

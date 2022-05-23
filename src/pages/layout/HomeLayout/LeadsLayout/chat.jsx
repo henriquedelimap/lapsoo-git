@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import Image from '../../../../img/perfil1.svg'
-import {MdArrowUpward} from 'react-icons/md'
+import {MdArrowUpward, MdInfoOutline} from 'react-icons/md'
 import { useParams } from 'react-router-dom'
 import { leads } from '../../../scripts/leads'
+import { InfoChat } from './infoLeads'
 
 export function Chat(){
     let {id} = useParams()
@@ -12,46 +13,30 @@ export function Chat(){
             
             if(id == lead.id){
                 return (
-                    <div className="body-chat c0" key={lead.id}>
-                        <div className='dfc alcen chat-header'>
+                    <div className="dfc" key={lead.id}>
+                        <div className='dfc '>
                             {/* <span className='perfil-circle'>
                                 <img src={Image} />
                             </span> */}
-                            <Link to='../'>
-                                <MdArrowUpward className='MdIconColor chat-arrow-upward' />
-                            </Link>
+                            
+                            
+                            <div className='chat-header'>
+                                <Link to='../'>
+                                    <MdArrowUpward className='MdIconColor fs12rem' />
+                                </Link>
+                                <span className='leads-name-chat'>{lead.name}</span>
 
-                            <span className='leads-name-chat'>{lead.name}</span>
-
-
-                            <div className=' dfc'>
-                                <img  src={lead.img} />
-                                <span> 
-                                    adicionado em: {lead.createdAt}
-                                </span> 
-                                <span>
-                                    modificado em: {lead.uploadedaAt}
-                                </span>
-                                <span>
-                                    cidade: {lead.cidade}
-                                </span>
-                                <span>
-                                    email: {lead.email}
-                                </span>
-                                <span>
-                                    telefone: {lead.telefone}
-                                </span>
-                                <span>
-                                    corretor: {lead.corretor}
-                                </span>
-                                <span>
-                                    indicador: {lead.indicador}
-                                </span>
-                                <span>
-                                    status: {lead.status}
-                                </span>
+                                <Link to='info' >
+                                    <MdInfoOutline className='MdIconColor infoIcon fs12rem' />
+                                </Link>
                             </div>
+
+                            
+                            
+
                         </div>
+
+                        <Outlet />
                     </div>
                 )
             }
