@@ -274,10 +274,9 @@
         height: 100%;
         position: absolute;
         border-bottom: 2.8px solid var(--2);
-        border-radius: .1rem;
         bottom: -1rem;
-        left: 50%;
-        transform: translateX(-45%);
+        animation: link .16s ease-out alternate; 
+
     }
 
     .Link.active{
@@ -285,12 +284,8 @@
         background-color: var(--0);
         color: var(--2);
         border-radius: 0%;
-        position: relative;  
-      }
-
-
-
-
+        position: relative; 
+    }
 
     .res-none{
         display: none;
@@ -318,5 +313,14 @@
     }
     .con-card-config{
         margin: 2.4rem 1.6rem;
+    }
+}
+
+@keyframes link{
+    to{
+        transform: scaleX(1);
+    }
+    from{
+        transform: scaleX(.16) ;
     }
 }
