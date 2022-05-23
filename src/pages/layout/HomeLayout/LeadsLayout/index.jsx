@@ -1,5 +1,5 @@
 import {MdManageAccounts, MdSend, MdScheduleSend, MdVisibility} from 'react-icons/md'
-import { Link, Outlet, useParams } from 'react-router-dom'
+import { NavLink, Outlet, useParams } from 'react-router-dom'
 import { leads } from '../../../scripts/leads'
 import {HorizontalScrollContainer, HorizontalScrollItem } from 'react-simple-horizontal-scroller'
 export function Leads(){
@@ -16,7 +16,7 @@ export function Leads(){
                         <div key={lead.id}>
                                 <HorizontalScrollItem id={lead.id} >
 
-                                    <Link to={'chat/'+lead.id} className='tdn'  >
+                                    <NavLink to={'chat/'+lead.id} className='tdn'  >
                                         <div className="card-box">
 
                                         <div className='perfil-container'>
@@ -33,7 +33,7 @@ export function Leads(){
                                             </span>
                                         </div>
                                         </div>
-                                    </Link>
+                                    </NavLink>
 
                                 </HorizontalScrollItem>
                         </div>

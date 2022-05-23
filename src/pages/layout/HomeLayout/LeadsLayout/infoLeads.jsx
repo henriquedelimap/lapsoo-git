@@ -15,7 +15,7 @@ export function InfoChat(){
 
 
                 
-                <div className=' dfr chat-body'>
+                <div className=' dfr chat-body' key={lead.id}>
                         <Link to='../'>
                                 <MdClose className='MdIconColor fs12rem' />
                         </Link>

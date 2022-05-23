@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import './style.css'
 import { MdSettings, MdAccountCircle, MdDashboard } from 'react-icons/md'
 
@@ -24,11 +24,11 @@ class  HomePage extends React.Component{
                         {
                             ScriptMenuLateral.map(script=>{
                                 return(
-                                    
-                                    <Link className='Link  ' to={script.route}  key={script.id}>
+                                                          
+                                    <NavLink className='Link' to={script.route}  key={script.id}>
                                         <span className="MdIcon res-none">{script.icon}</span> 
                                         <span>{script.text}</span> 
-                                    </Link> 
+                                    </NavLink> 
                                 )
                             })
                         }

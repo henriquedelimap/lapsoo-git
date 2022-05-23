@@ -18,8 +18,6 @@ export function Chat(){
                             {/* <span className='perfil-circle'>
                                 <img src={Image} />
                             </span> */}
-                            
-                            
                             <div className='chat-header'>
                                 <Link to='../'>
                                     <MdArrowUpward className='MdIconColor fs12rem' />
@@ -30,12 +28,7 @@ export function Chat(){
                                     <MdInfoOutline className='MdIconColor infoIcon fs12rem' />
                                 </Link>
                             </div>
-
-                            
-                            
-
                         </div>
-
                         <Outlet />
                     </div>
                 )

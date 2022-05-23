@@ -11,7 +11,7 @@ export const ScriptMenuLateral = [
     },
     {
         status: 2,
-        id: 1,
+        id: 2,
         route: 'inicio',
         icon: <MdAttachMoney  />,
         text: 'cotação'

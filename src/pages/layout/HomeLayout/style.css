@@ -1,6 +1,10 @@
 .tdn{
     text-decoration: none;
 }
+.tdn.active {
+    
+}
+
 
 .container{
     width: 100vw;
@@ -67,6 +71,17 @@
 .Link:hover{
     background-color: var(--8);
 }
+
+
+.Link.active{
+  background-color: var(--7);
+}
+.Link.active span{
+    color: var(--1);
+}
+
+
+
 
 .MdIcon{
     font-size: 1.4rem;
@@ -253,32 +268,38 @@
         justify-content: center;
         align-items: flex-end;
     }
-    .ativo{
+    .Link.active::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-bottom: 2.8px solid var(--2);
+        border-radius: .1rem;
+        bottom: -1rem;
+        left: 50%;
+        transform: translateX(-45%);
+    }
+
+    .Link.active{
         width: 100%;
         background-color: var(--0);
         color: var(--2);
         border-radius: 0%;
         position: relative;  
+      }
 
-    }
-    .ativo::after{
-        content: '';
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        border-bottom: 2.8px solid var(--2);
-        border-radius: .1rem;
-        bottom: -1.1rem;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+
+
+
+
     .res-none{
         display: none;
     }
     .Link:hover{
         background-color: transparent;
-
     }
+
+
 
     .body{
         grid-area: 3 / span 4;
